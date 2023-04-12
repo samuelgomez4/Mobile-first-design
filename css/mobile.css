@@ -18,6 +18,7 @@
     --x-small: 0.8rem;
     --primary-bg: linear-gradient(45deg, #F7931A, #201E1C);
     --secondary-bg: #201E1C;
+    --alternate-bg: #FAF8F7;
     --primary-color: #F7931A;
     --secondary-color: #FF9536;
     --soft-color: #FFE9D4;
@@ -88,4 +89,73 @@ header{
 .header__button::after{
   content: url("../assets/arrow-down.svg");
   margin-left: 14px;
+}
+.exchange{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px 65px;
+    background-color: var(--alternate-bg);
+
+}
+.exchange__title{
+    font-size: var(--x-large);
+    font-weight: var(--bold);
+    color: var(--text-main-color-dark);
+    font-family: var(--primary-font);
+    line-height: 26px;
+    text-align: center;
+    margin: 40px 0 24px;
+}
+.exchange__description{
+    font-size: var(--normal);
+    font-weight: var(--medium);
+    color: var(--text-secondary-color-dark);
+    font-family: var(--primary-font);
+    line-height: 18px;
+    text-align: center;
+    margin: 0px 0 48px;
+}
+.exchange__currencies h3{
+    font-size: var(--large);
+    font-weight: var(--bold);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+.exchange__table{
+    border-radius: 8px;
+    background-color: var(--text-main-color-light);
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+.exchange__table td{
+    width: 101px;
+    height: 39px;
+    padding: 10px 12px 10px 12px;
+    font-family: var(--secondary-font);
+    border: 1px solid #faf8f7;
+}
+.exchange__table td:first-child{
+    font-size: var(--medium);
+    font-weight: var(--medium);
+    color: var(--text-color-lighter-dark);
+}
+.exchange__table td span{
+    font-size: var(--normal);
+    font-weight: var(--normal);
+    color: var(--text-secondary-color-dark);
+}
+.exchange__update{
+    width: 173px;
+    height: 31px;
+    background-color: var(--soft-color);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: var(--small);
+    font-weight: var(--medium);
+    color: var(--text-main-color-dark);
+    font-family: var(--secondary-font);
+    margin: 0 auto;
 }

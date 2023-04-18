@@ -19,6 +19,7 @@
     --primary-bg: linear-gradient(45deg, #F7931A, #201E1C);
     --secondary-bg: #201E1C;
     --alternate-bg: #FAF8F7;
+    --item-bg: #282623;
     --primary-color: #F7931A;
     --secondary-color: #FF9536;
     --soft-color: #FFE9D4;
@@ -219,11 +220,13 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
     justify-content: center;
+    gap: 16px;
 
 }
 .benefits__item{
     padding: 16px;
-    margin-bottom: 38px;
+    background-color: var(--item-bg);
+    border-radius: 4px;
 }
 .benefits__item h3{
     font-family: var(--primary-font);

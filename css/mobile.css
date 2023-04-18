@@ -27,6 +27,8 @@
     --text-color-lighter-dark: #B5B0AC;
     --text-main-color-light: #FFFFFF;
     --text-secondary-color-light: #808080;
+}
+html{
     font-size: 62.5%;
 }
 header{
@@ -91,9 +93,14 @@ header{
   margin-left: 14px;
 }
 .exchange{
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    place-content: center;
+    place-items: center;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     padding: 60px 15px 65px;
     background-color: var(--alternate-bg);
 
@@ -207,6 +214,12 @@ header{
     line-height: 18px;
     text-align: center;
     margin-bottom: 32px;
+}
+.benefits__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    justify-content: center;
+
 }
 .benefits__item{
     padding: 16px;

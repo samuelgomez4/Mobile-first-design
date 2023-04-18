@@ -1,0 +1,26 @@
+.exchange{
+    grid-template-columns: 1fr 1fr;
+}
+.exchange__currencies{
+    grid-area: 1 / 2 / 4 / 3;
+}
+.exchange__title{
+    grid-row: 2/3;
+}
+.exchange__description{
+    grid-row: 3/4;
+}
+.know-more-container{
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+.know-more-container h2{
+    position: static;
+    transform: translateX(0%);
+}
+.know-more-container img{
+    width: 40%;
+}

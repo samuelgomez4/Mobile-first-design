@@ -218,7 +218,7 @@ header{
 }
 .benefits__container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
     justify-content: center;
     gap: 16px;
 
